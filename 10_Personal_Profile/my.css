@@ -1,0 +1,38 @@
+body {
+  background-color: #4d5198;
+  font-family: Helvetica;
+  color: #81b7d2;
+  margin-left: 45px;
+
+}
+
+h1 {
+  color: #81b7d2;
+}
+
+h2 {
+  color: #ffcce7;
+}
+
+h3 {
+  color: #ffcce7;
+}
+
+strong {
+  color: #81b7d2;
+}
+
+a {
+  color: #daf2dc;
+}
+
+li {
+  color: #ffcce7;
+  margin-bottom: 12px;
+
+
+}
+
+mark {
+  text-align: center;
+}
