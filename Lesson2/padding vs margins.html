@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>example 1</title>
+  <style type="text/css">
+
+
+    section {
+      background-color: #FFc0c0;
+      border:  3px solid black;
+      height: 300px;
+      margin: 0;
+      padding: 0;
+      width: 300px;
+    }
+
+    article {
+      background-color: #c0c0ff;
+      border: 30px solid blue;
+      box-sizing: border-box;
+      height: 200px;
+      margin: 40px;
+      padding: 50px;
+      width: 200px;
+    }
+
+    .toggled {
+      background-color: #c0ffc0;
+      border: 30px solid green;
+    }
+
+    p {
+      margin-bottom: 15px;
+      margin-top: 32px;
+    }
+
+  </style>
+</head>
+<body>
+<script>
+  var article = {
+    toggleColor: function() {
+      document.querySelector('article').classList.toggle('toggled');
+    }
+  };
+</script>
+
+<section>
+  <article onclick="article.toggleColor();">
+    Click Herez    
+  </article>
+</section>
+
+<p>This is the first sentence</p>
+<p>This is the second sentence</p>
+</body>
+</html>
