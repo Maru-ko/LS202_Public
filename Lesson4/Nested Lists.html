@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+    body {
+      /*background: repeating-linear-gradient(#e66465, #9198e5);*/
+      background-color: #1868ae;
+      background-size: cover;
+      font-size: 22px;
+      font-family: verdana;
+      color: #fff;
+      margin: 25px 50px;
+      color: #c6d7eb;
+    }
+
+    li, dd, dt {
+      font-size: 1.25rem;
+      padding: 2px;
+    }
+
+    .red, .white, .blue {
+      width: 50px;
+      height: 25px;
+    }
+
+    .red {
+      background-color: red;
+    }
+
+    .white {
+      background-color: white;
+    }
+
+    .blue {
+      background-color: blue;
+    }
+
+    #red {
+      color: red;
+    }
+
+    #white {
+      color: white;
+    }
+
+    #blue {
+      color: blue;
+    }
+  </style>
+  <meta charset="utf-8">
+  <title>Nested Lists</title>
+</head>
+<body>
+  <h1>Nested Lists</h1>
+
+  <dl>
+    <dt><strong>Unordered</strong></dt>
+    <dd>A simple list with bullets.</dd>
+    <dd>A plain list with no bullets or sequence numbers.</dd>
+    <dd>
+      <ul>
+        <li>Glasses</li>
+        <li>Laptop</li>
+        <li>Tablet</li>
+      </ul>
+    </dd>
+
+    <dt><strong>Ordered</strong></dt>
+    <dd>A simple list with a visible sequence.</dd>
+    <dd>
+      <ol>
+        <li>Wakeup</li>
+        <li>Shower</li>
+        <li>Dress</li>
+      </ol>
+    </dd>
+
+    <dt><strong>Description</strong></dt>
+    <dt><strong>Definition</strong></dt>
+    <dd>A list of terms and definitions</dd>
+    <dd>
+      <dl>
+        <dt>赤い</dt> <dd><div class="red"></div></dd>
+        <dt>白い</dt> <dd><div class="white"></div></dd>
+        <dt>青</dt> <dd><div class="blue"></div></dd>
+      </dl>
+    </dd>
+  </dl>
+
+  <h2>Display of how tags nest in an unordered list</h2>
+  <ul>
+    <li id="red">
+      Red
+      <ul>
+        <li>&#9608;&#9608;&#9608;</li>
+        <li>#ff0000</li>
+        <li>rgb(255, 0, 0)</li>
+      </ul>
+    </li>
+
+    <li id="white">
+      White
+      <ul>
+        <li>&#9608;&#9608;&#9608;</li>
+        <li>#ffffff</li>
+        <li>rgb(255, 255, 255)</li>
+      </ul>
+    </li>
+
+    <li>
+      Blue
+      <ul id="blue">
+        <li>&#9608;&#9608;&#9608;</li>
+        <li>#0000ff</li>
+        <li>rgb(0, 0, 255)</li>
+      </ul>
+    </li>
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
