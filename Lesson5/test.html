@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+    body {
+      font-family: Arial Black;
+      background-color: floralwhite;
+      border-color: lightseagreen;
+      /*color: white;*/
+    }
+      fieldset {
+        border-width: 6px;
+        border-color: burlywood;
+        margin: 20px;
+      }
+
+    input:disabled {
+      background-color: lightpink;
+
+    }
+
+    input:enabled {
+      background-color: lightblue;
+      color: firebrick; 
+    }
+
+    label {
+      font-family: arial;
+    }
+
+    input:required {
+      background-color: lightseagreen;
+      color: floralwhite;
+    }
+
+
+  </style>
+  <meta charset="utf-8">
+  <title>Forms Chapters</title>
+</head>
+<body>
+  <form action="#" method="post">
+    <fieldset>
+      <h1>Log In</h1>
+      <fieldset>
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" />
+      </fieldset>
+
+    
+    <fieldset>
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" placeholder="secret" maxlength="5" />
+    </fieldset>
+
+    <fieldset>
+      <input type="submit" value="Log In" />
+      <input type="submit" value="Delete Account"
+             formaction="/account/delete" />
+      <input type="submit" value="Forgot Password"
+             formaction="/account/password" />
+      <input type="reset" value="Reset">
+    </fieldset>
+ </form>
+
+  <form action="#" method="post">
+    <h1>Info</h1>
+    <fieldset>
+      <label>
+        First Name
+        <input type="text" name="first_name" placeholder="Tamachan">
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" name="phone_number" placeholder="(###) ###-####">
+    </fieldset>
+
+   <fieldset>
+     <label for="email">Email</label>
+     <input type="email" name="email" placeholder="username@domain">
+   </fieldset>
+  </form>
+
+  <form>
+    <h1>Check Box Choices</h1>
+    <fieldset>
+      <label>
+        <input type="checkbox" name="choice" value="search" checked />
+        Sort search results
+      </label>
+
+      <label>
+        <input type="checkbox" name="choice" value="google" />
+        Search on Google
+      </label>
+
+      <label>
+        <input type="checkbox" name="choice" value="recent" checked />
+        Recent results (within last year)
+      </label>
+    </fieldset>
+  </form>
+
+  <form>
+    <h1>Radio Buttons</h1>
+    <fieldset>
+      <label>
+        <input type="radio" name="color" value="red"/>
+        Red
+      </label>
+
+      <label>
+        <input type="radio" name="color" value="green" checked />
+        Green
+      </label>
+
+      <label>
+        <input type="radio" name="color" value="blue" />
+        Blue
+      </label>
+    </fieldset>
+  </form>
+
+  <form>
+    <h1>Submit Buttons</h1>
+    <fieldset>
+      <input type="submit" value="Save" />
+      <input type="submit" value="Stop" />
+      <input type="submit" value="Save Me" />
+    </fieldset>
+  </form>
+
+  <form action="#" method="post">
+    <h1>Reset Button</h1>
+    <fieldset>
+      <input type="email" name="emz" placeholder="email@desu">
+      <input type="reset" name="emz" value="Clear Form" />
+    </fieldset>
+  </form>
+
+  <div>
+    <h1>Love meter!</h1>
+    <fieldset>
+      <label>
+        Cats
+      <input type="range" id="cats" name="cats"
+      min="0" max="11">
+      </label>
+      <label>
+        Dogs
+      <input type="range" id="dogs" name="dogs">
+    </label>
+    </fieldset>
+  </div>
+
+  <form action="#" method="post">
+    <h1>Free Haircuts, Sign up here!</h1>
+    <fieldset>
+      <label>
+        Email
+        <input type="email" name="email" placeholder="maruko@desu" disabled>
+        <input type="submit" name="email" value="sign me up!" disabled>
+      </label>
+    </fieldset>
+  </form>
+
+  <form>
+    <h1>Required details</h1>
+    <fieldset>
+      <label>
+        Home Phone
+      <input type="tel" name="home_phone" required placeholder="(###)" />
+       </label>
+      <br />
+      <label>
+        Business Phone
+        <input type="tel" name="business_phone" />
+      </label>
+      <br />
+      <input type="submit" value="Save">
+    </fieldset>
+  </form>
+
+  <br>
+  <fieldset>
+    <label>
+      Auto-Complete: on
+      <input type="tel" name="phone" autocomplete="on">
+    </label>
+    <br>
+    <label>
+      Autocapitalize attribute
+      <input type="text" name="full-name" autocapitalize="words" />
+    </label>
+    <br>
+    <label>
+      Autocorrect Attribute
+      <input type="text" name="last-name" size="50" autocorrect="on" />
+    </label>
+  </fieldset>
+
+  <form action="#" method="post">
+    <fieldset>
+      <label>
+        <strong>Text Area</strong>
+        <br>
+        <textarea name="tweet" placeholder="You can write whatever you want here!"></textarea>
+
+      </label>
+    </fieldset>
+  </form>
+
+  <form action="#" method="post">
+    <fieldset>
+      <label>
+        <strong>Comment</strong>
+        <br>
+        <textarea name="tweet" rows="8" cols="50" placeholder="I use the place holder but we can use the space between the textarea tags"></textarea>
+      </label>
+    </fieldset>
+  </form>
+
+  <form action="#" method="post">
+    <fieldset>
+      <label>
+        <strong>Select Element w/ Options</strong>
+        <br>
+        Colors
+        <br>
+        <select name="color">
+          <option value="" disabled selected>Choose one</option>
+          <option value="#f00">Rouge</option>
+          <option value="#0f0">Vert</option>
+          <option value="#00f">Bleue</option>
+        </select>
+      </label>
+    </fieldset>
+  </form>
+
+  <form>
+    <fieldset>
+      <label>
+        <strong>Choose Your Favorite Movie(s)!</strong>
+        <br>
+        <select name="favorites" multiple size="6">
+          <option value="" disabled selected>Select One or More</option>
+          <option>2001: A Space Odysser</option>
+          <option>Arrival</option>
+          <option>Close Encounters of the Third Kind</option>
+          <option>District 9</option>
+          <option>Guardians of the Galaxy</option>
+          <option>Interstellar</option>
+          <option>Serenity</option>
+          <option>Silent Running</option>          
+        </select>
+      </label>
+    </fieldset>
+  </form>
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

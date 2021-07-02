@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tweaking Contant Form</title>
+  <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+  <!-- contact form | each input field can appear on a separate line
+        label and input fields
+          First name
+          Last name
+          email address
+          city
+          state
+          zip code -->
+  <form >
+    <fieldset>
+      <dl class="partial one_half left">
+        <dt><label for="first_name">First Name:</label></dt>
+        <dd><input type="text" name="first_name" id="first_name"></dd>
+      </dl><!-- 
+       --><dl class="partial one_half right">
+        <dt>
+          Last Name:
+          <dd><input type="text" name="last_name"></dd>
+        
+</dl>
+<dl>
+
+        <dt><label for="email">E-Mail:</label></dt>
+        <dd><input type="email" name="email" id="email" placeholder="maruko@desu"></dd>
+</dl>
+<dl class="partial one_half left">
+        <dt><label for="city">City:</label></dt>
+        <dd><input type="text" name="city" id="city"></dd>
+</dl><!-- 
+ --><dl class="partial one_third third_middle">
+        <dt><label for="state">State:</label></dt>
+        <dd>
+          <select name="state" id="state">
+              <option>AK</option>
+              <option>AL</option>
+              <option>AR</option>
+              <option>AZ</option>
+              <option>CA</option>
+              <option>CO</option>
+              <option>CT</option>
+              <option>DC</option>
+              <option>DE</option>
+              <option>FL</option>
+              <option>GA</option>
+              <option>HI</option>
+              <option>IA</option>
+              <option>ID</option>
+              <option>IL</option>
+              <option>IN</option>
+              <option>KS</option>
+              <option>KY</option>
+              <option>LA</option>
+              <option>MA</option>
+              <option>MD</option>
+              <option>ME</option>
+              <option>MI</option>
+              <option>MN</option>
+              <option>MO</option>
+              <option>MS</option>
+              <option>MT</option>
+              <option>NC</option>
+              <option>ND</option>
+              <option>NE</option>
+              <option>NH</option>
+              <option>NJ</option>
+              <option>NM</option>
+              <option>NV</option>
+              <option>NY</option>
+              <option>OH</option>
+              <option>OK</option>
+              <option>OR</option>
+              <option>PA</option>
+              <option>RI</option>
+              <option>SC</option>
+              <option>SD</option>
+              <option>TN</option>
+              <option>TX</option>
+              <option>UT</option>
+              <option>VA</option>
+              <option>VT</option>
+              <option>WA</option>
+              <option>WI</option>
+              <option>WV</option>
+              <option>WY</option>
+          </select>
+        </dd>
+</dl><!-- 
+ --><dl class="partial one_third third_right">
+        <dt><label for="zipcode">Zipcode:</label></dt>
+        <dd><input type="number" name="zipcode" id="zipcode"  max="5"></dd>
+      </dl>
+
+      <dl>
+        <dt><label for="color">What color do you like best?:</label></dt>
+        <dd>
+          <select name="color" id="color" >
+            <option value="red" selected>Red</option>
+            <option value="white">White</option>
+            <option value="blue">Blue</option>
+          </select>
+        </dd>
+      </dl>
+
+        <dl>
+          <dt><label for="pro_lang">What web technologies do you want to learn?</label></dt>
+          <dd>
+            <select name="pro_lang" id="pro_lang" size="5" multiple>
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+              <option value="javascript">JavaScript</option>
+              <option value="ruby">Ruby</option>
+              <option value="rails">Rails</option>
+            </select>
+          </dd>
+        </dl>
+
+      <dl>
+        <dt><label for="comments">Comment Area:</label></dt>
+        <dd><textarea name="comments" rows="6" cols="80" placeholder="lave your comment here!"></textarea></dd>
+      </dl>
+
+      <input type="hidden" name="timestamp" value="2020-07-01">
+      <input type="submit" name="timestamp" value="timestamp">
+
+      <input type="submit" name="send" value="send">
+      <input type="reset" name="reset">        
+ 
+
+      <p>Which of these colors you like best?</p>
+      <ul>
+        <li>
+          <label><input type="radio" name="color" value="red" checked>Red</label>
+        </li>
+        <li>
+          <label><input type="radio" name="color" value="fuschia">Fuschia</label>
+        </li>
+        <li>
+          <label><input type="radio" name="color" value="white">White</label>
+        </li>
+        <li>
+          <label><input type="radio" name="color" value="blue">Blue</label>
+        </li>
+      </ul>
+
+      <p>Which web technologies do you want to learn?</p>
+      <ul>
+        <li>
+          <label><input type="checkbox" name="html" value="HTML">HTML</label>
+        </li>
+        <li>
+          <label><input type="checkbox" name="css" value="CSS">CSS</label>
+        </li>
+        <li>
+          <label><input type="checkbox" name="javascript" value="JavaScript">JavaScript</label>
+        </li>
+      </ul>
+
+      <textarea rows="6" cols="80" name="comments" id="comments"></textarea>
+      <input type="hidden" name="timestamp2" value="2021-06-01">
+      <input type="submit" name="Send">
+      <input type="reset" name="reset">
+
+
+      <input type="button" value="Submit" />
+    </fieldset>
+  </form>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
